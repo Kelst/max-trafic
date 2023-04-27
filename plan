@@ -1,0 +1,21 @@
+1. Витягнути дані із бази даних
+2. Відфільтрувати дані з бази даних,
+class MyObject:
+    def __init__(self, sent, recv, acct_input_gigawords, acct_output_gigawords, start):
+        self.sent = sent
+        self.recv = recv
+        self.acct_input_gigawords = acct_input_gigawords
+        self.acct_output_gigawords = acct_output_gigawords
+        self.start = start
+потрібно створити масив в якому будуть обєкти типу [
+    {
+        uid:"21151",
+        sessions:[MyObject,MyObject,MyObject,MyObject]
+    }
+]
+
+3.пройтись по масиву і запустити функцію для find_object для поля sessions  find_object поверне масив сесій по заданій даті
+якщо не було користування він поверне пустий масив
+
+4.потрібно далі просто ще раз пройтись по масиву і додати значення трафіку 
+5 отриманий мавив відсортувати.
